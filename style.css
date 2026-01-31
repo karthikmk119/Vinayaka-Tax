@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f6f8fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #f9a825, #ffcc80);
+    padding: 35px 15px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #2e2e2e;
+}
+
+header p {
+    margin-top: 8px;
+    font-size: 17px;
+    color: #2e2e2e;
+}
+
+/* Navigation */
+nav {
+    background: #2e7d32;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 18px;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #1b5e20;
+    border-radius: 6px;
+}
+
+/* Sections */
+.section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #e65100;
+    margin-top: 0;
+}
+
+.price {
+    font-size: 20px;
+    color: #1b5e20;
+    font-weight: bold;
+}
+
+/* CTA */
+.cta {
+    background: #2e7d32;
+    color: #fff;
+    padding: 35px 20px;
+    text-align: center;
+    border-radius: 18px;
+}
+
+.cta a {
+    display: inline-block;
+    margin-top: 15px;
+    background: #ffffff;
+    color: #2e7d32;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.cta a:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: #212121;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 22px;
+    right: 22px;
+    background-color: #25D366;
+    color: #fff;
+    border-radius: 50px;
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+    z-index: 9999;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.whatsapp-float img {
+    width: 26px;
+    margin-right: 10px;
+}
+
+.whatsapp-float:hover {
+    background-color: #1ebe5d;
+    transform: scale(1.05);
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 26px;
+    }
+    .whatsapp-float {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+}
